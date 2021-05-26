@@ -1,0 +1,12 @@
+    public static class Extentions
+    {
+        public static void SetupObjectA(this ApiSetup<ObjectA> a)
+        {
+               
+        }
+
+        public static void SetupObjectB(this ApiSetup<ObjectB> a)
+        {
+
+        }
+    }

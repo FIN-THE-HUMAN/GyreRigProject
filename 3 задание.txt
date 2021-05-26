@@ -1,0 +1,26 @@
+interface ISomeInterface
+{
+	void Call();
+}
+
+struct SomeStruct : ISomeInterface
+{
+ 	public void Call()
+ 	{
+
+	}
+}
+
+class SomeClass
+{
+ 	public void SomeMethod<T>(T obj) where T : ISomeInterface
+ 	{
+ 		obj.Call();
+ 	}	
+
+ 	public void Run()
+ 	{
+ 		var someStruct = new SomeStruct();
+ 		SomeMethod(someStruct);
+ 	}
+}
